@@ -43,6 +43,6 @@ app.post('/name', function(req, res){
     console.log('you posted: First Name: ' + req.body.firstName + ', Last Name: ' + req.body.lastName);
 })
 
-app.listen(port,'192.168.56.1');
+app.listen(port,'localhost');
 console.log("App listening on port " + port);
 module.exports = app;
