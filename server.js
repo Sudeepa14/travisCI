@@ -46,4 +46,3 @@ app.post('/name', function(req, res){
 app.listen(port,'localhost');
 console.log("App listening on port " + port);
 module.exports = app;
-exit 1;
