@@ -4,7 +4,7 @@ var app = express()                        // create our app w/ express
 const path = require('path');
 var port     =process.env.PORT || 8081;                // set the port
 var bodyParser = require('body-parser'); 
-var html = require('HTML');
+//var html = require('html');
 
 app.use(express.static('views'));
 // app.use(express.static(__dirname + '/public'));
@@ -43,6 +43,6 @@ app.post('/name', function(req, res){
     console.log('you posted: First Name: ' + req.body.firstName + ', Last Name: ' + req.body.lastName);
 })
 
-app.listen(port,'192.168.56.1');
+app.listen(port,'localhost');
 console.log("App listening on port " + port);
 module.exports = app;
